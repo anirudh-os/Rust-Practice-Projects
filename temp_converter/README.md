@@ -27,7 +27,7 @@ cargo run
 
 ```
 Enter the temperature you want to convert (value unit):
-100Fahrenheit
+100 Fahrenheit
 37 Celsius
 ```
 
