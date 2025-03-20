@@ -9,6 +9,7 @@ It parses input expressions like `12+4`, `18*3`, or `2^5`, extracts operands and
 
 - Supports basic arithmetic operations: `+`, `-`, `*`, `/`, `%`, `^`
 - Parses input like `25+5` or `100/4`
+- The expressions can have spaces too!
 - Graceful error handling for invalid input formats
 - Demonstrates Rust concepts like input parsing, pattern matching, error propagation, and `Result` handling
 
