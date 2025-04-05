@@ -39,3 +39,9 @@ pub fn display_menu_filter() {
     println!("6. Return to main menu");
     println!("Enter your choice: ");
 }
+
+pub fn display_menu_stateful() {
+    println!("1. Call the closure");
+    println!("2. Return to the main function");
+    println!("Enter your choice: ");
+}

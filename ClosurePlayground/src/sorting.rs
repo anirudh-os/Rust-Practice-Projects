@@ -1,6 +1,5 @@
 use std::io;
-use crate::menu;
-use menu::display_menu_sorting;
+use crate::menu::display_menu_sorting;
 
 pub fn extract_numbers(input: &str) -> Vec<i32> {
     let output: Vec<i32> = input.split_whitespace().map(|num| num.parse::<i32>().unwrap()).collect();

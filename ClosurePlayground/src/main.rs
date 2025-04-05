@@ -4,6 +4,7 @@ mod multiplier;
 mod sorting;
 mod filtering;
 mod memoization;
+mod stateful;
 
 fn main() {
     match menu::display_menu_main() {
@@ -14,6 +15,7 @@ fn main() {
                 3 => sorting::sort_input(),
                 4 => filtering::custom_filter(),
                 5 => memoization::memoization_fib(),
+                6 => stateful::stateful_closure(),
                 _ => {}
             }
         },

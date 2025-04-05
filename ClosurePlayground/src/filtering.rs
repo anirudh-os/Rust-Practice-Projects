@@ -1,8 +1,6 @@
 use std::io;
-use crate::sorting;
-use crate::menu;
-use sorting::extract_numbers;
-use menu::display_menu_filter;
+use crate::sorting::extract_numbers;
+use crate::menu::display_menu_filter;
 
 fn filter_and_print<F>(list: &[i32], condition: F)
 where F: Fn(i32) -> bool,
@@ -71,7 +69,9 @@ pub fn custom_filter() {
                 println!("Returning to the main menu...");
                 return;
             }
-            _ => {}
+            _ => {
+                println!("Wrong choice!");
+            }
         }
     }
 }
