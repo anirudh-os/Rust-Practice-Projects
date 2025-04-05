@@ -41,7 +41,7 @@ fn extract_operands_and_operator(input: String) -> Result<(i32, char, i32), Stri
 
 fn calculate (op1: i32, operator: char, op2:i32) -> Result<i32, String> {
     if op2 == 0 && operator == '/' {
-        return Err("Divison by zero error!".to_string());
+        return Err("Division by zero error!".to_string());
     }
     match operator {
         '+' => Ok(op1 + op2),
@@ -49,7 +49,7 @@ fn calculate (op1: i32, operator: char, op2:i32) -> Result<i32, String> {
         '*' => Ok(op1 * op2),
         '/' => Ok(op1 / op2),
         '%' => Ok(op1 % op2),
-        '^' => Ok(op1.pow(op2 as u32)), // pow needs the second operand as a u32
+        '^' => Ok(op1.pow(op2 as u32)), // pow needs the second operand as an u32
         _ => Err("Unknown Operator!".to_string()),
     }
 }
